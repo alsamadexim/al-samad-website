@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Background: Light Gray #F5F7FA */
+    --background: 216 33% 97%;
+    /* Foreground: Navy #041F63 */
+    --foreground: 223 92% 15%;
+    
+    /* Primary: Royal Blue #082C88 */
+    --primary: 223 89% 28%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary: Navy #041F63 */
+    --secondary: 223 92% 15%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Accent: Gold #D4AF37 */
+    --accent: 46 65% 52%;
+    --accent-foreground: 223 92% 15%;
+    
+    /* Card: White #FFFFFF */
+    --card: 0 0% 100%;
+    --card-foreground: 223 92% 15%;
+    
+    /* Muted: Slightly darker gray for inset backgrounds */
+    --muted: 216 20% 92%;
+    --muted-foreground: 223 20% 45%;
+    
+    /* Border: Soft gray */
+    --border: 216 20% 86%;
+    --input: 216 20% 86%;
+    --ring: 223 89% 28%;
+    
+    --radius: 1rem;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 223 92% 15%;
+  }
+
+  .dark {
+    /* Optional dark mode fallback - currently app relies heavily on brand colors */
+    --background: 223 92% 10%;
+    --foreground: 0 0% 100%;
+    
+    --primary: 223 89% 45%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 223 92% 8%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: 46 65% 52%;
+    --accent-foreground: 223 92% 10%;
+    
+    --card: 223 92% 14%;
+    --card-foreground: 0 0% 100%;
+    
+    --muted: 223 92% 18%;
+    --muted-foreground: 215 20% 75%;
+    
+    --border: 223 50% 25%;
+    --input: 223 50% 25%;
+    --ring: 46 65% 52%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --popover: 223 92% 14%;
+    --popover-foreground: 0 0% 100%;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "DM Sans", sans-serif;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    overflow-x: hidden;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.625;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-playfair {
+    font-family: "Playfair Display", serif;
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  .shadow-soft {
+    box-shadow: 0 10px 40px rgba(8, 44, 136, 0.06), 0 2px 8px rgba(8, 44, 136, 0.04);
+  }
+
+  .shadow-luxury {
+    box-shadow: 0 20px 60px rgba(8, 44, 136, 0.12), 0 4px 12px rgba(8, 44, 136, 0.08);
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
