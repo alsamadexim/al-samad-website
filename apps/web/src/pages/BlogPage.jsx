@@ -29,9 +29,9 @@ Looking ahead, we expect demand to keep growing as more Gulf-based businesses se
     excerpt: 'A look at the certifications and quality checks that ensure our products meet international standards.',
     date: 'May 20, 2026',
     image: 'https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=800',
-    content: `For any exporter dealing in bulk agricultural products, quality assurance isn't optional — it's the foundation of every successful trade relationship. International buyers expect documentation, certifications, and consistency that match their local regulatory requirements.
+    content: `For any exporter dealing in bulk agricultural products, quality assurance is not optional — it is the foundation of every successful trade relationship. International buyers expect documentation, certifications, and consistency that match their local regulatory requirements.
 
-Some of the key certifications buyers commonly look for include FSSAI registration, phytosanitary certificates for plant-based products, and in many cases, ISO or HACCP certification depending on the destination country. These documents aren't just paperwork — they represent a verified process of handling, storage, and packaging that protects product integrity from farm to port.
+Some of the key certifications buyers commonly look for include FSSAI registration, phytosanitary certificates for plant-based products, and in many cases, ISO or HACCP certification depending on the destination country. These documents are not just paperwork — they represent a verified process of handling, storage, and packaging that protects product integrity from farm to port.
 
 At AL-SAMAD GLOBAL TRADER, every shipment goes through a multi-step quality check: moisture testing, visual inspection for foreign matter, packaging integrity checks, and proper labeling in line with the destination country's import regulations. This reduces the risk of shipments being held at customs and builds long-term trust with our overseas partners.
 
@@ -57,13 +57,13 @@ Finally, working with reliable freight forwarders and shipping lines ensures pre
     slug: 'fresh-fruits-export-india',
     category: 'Fruits',
     readTime: '5 min read',
-    title: 'India's Fresh Fruit Export Boom: Opportunities for Global Buyers',
-    excerpt: 'How Indian fruit exporters are meeting rising global demand with better packaging and cold chain solutions.',
+    title: "India's Fresh Fruit Export Boom: Opportunities for Global Buyers",
+    excerpt: "How Indian fruit exporters are meeting rising global demand with better packaging and cold chain solutions.",
     date: 'April 18, 2026',
     image: 'https://images.pexels.com/photos/918643/pexels-photo-918643.jpeg?auto=compress&cs=tinysrgb&w=800',
-    content: `India is one of the world's largest producers of tropical fruits, and its export sector has been growing steadily as infrastructure and packaging technology improve. Mangoes, pomegranates, bananas, and grapes are among the most exported varieties, with buyers in the Middle East, Europe, and Southeast Asia leading demand.
+    content: `India is one of the largest producers of tropical fruits in the world, and its export sector has been growing steadily as infrastructure and packaging technology improve. Mangoes, pomegranates, bananas, and grapes are among the most exported varieties, with buyers in the Middle East, Europe, and Southeast Asia leading demand.
 
-What has changed significantly in recent years is the investment in post-harvest handling. Cold storage facilities near major farming regions, better packaging materials, and more reliable reefer container services have dramatically reduced spoilage during transit. This means buyers now receive fresher product with longer shelf life than was possible even five years ago.
+What has changed significantly in recent years is the investment in post-harvest handling. Cold storage facilities near major farming regions, better packaging materials, and more reliable reefer container services have dramatically reduced spoilage during transit. Buyers now receive fresher product with longer shelf life than was possible even five years ago.
 
 For bulk buyers, India offers a unique advantage: the diversity of growing regions means there is almost always a season in progress somewhere in the country. This allows for a more consistent year-round supply compared to single-region exporters.
 
@@ -73,8 +73,8 @@ At AL-SAMAD GLOBAL TRADER, we source directly from verified farms across Andhra 
     slug: 'moringa-global-superfood',
     category: 'Health & Wellness',
     readTime: '4 min read',
-    title: 'Moringa: India's Superfood Taking Global Markets by Storm',
-    excerpt: 'Why moringa powder and pods from India are becoming one of the most sought-after health exports worldwide.',
+    title: "Moringa: India's Superfood Taking Global Markets by Storm",
+    excerpt: "Why moringa powder and pods from India are becoming one of the most sought-after health exports worldwide.",
     date: 'April 2, 2026',
     image: 'https://images.pexels.com/photos/4198019/pexels-photo-4198019.jpeg?auto=compress&cs=tinysrgb&w=800',
     content: `Moringa oleifera — commonly known as the drumstick tree — has been a staple of Indian cooking and traditional medicine for centuries. But over the last decade, it has found a massive global audience as consumers across Europe, North America, and the Middle East seek out natural superfoods with proven health benefits.
@@ -108,79 +108,79 @@ At AL-SAMAD GLOBAL TRADER, we believe every buyer relationship should be built o
 export default function BlogPage() {
   return (
     <>
-    <Header />
-    <main className="min-h-screen bg-background pt-20">
+      <Header />
+      <main className="min-h-screen bg-background pt-20">
 
-      {/* Hero */}
-      <section className="bg-secondary text-white py-24 px-4 text-center">
-        <p className="text-accent font-semibold tracking-widest uppercase text-sm mb-3">
-          Insights & Updates
-        </p>
-        <h1 className="text-4xl md:text-5xl font-bold font-playfair mb-4">
-          Our Blog
-        </h1>
-        <p className="text-white/70 max-w-2xl mx-auto text-lg">
-          News, trends, and insights from the world of global agricultural trade.
-        </p>
-      </section>
+        {/* Hero */}
+        <section className="bg-secondary text-white py-24 px-4 text-center">
+          <p className="text-accent font-semibold tracking-widest uppercase text-sm mb-3">
+            Insights & Updates
+          </p>
+          <h1 className="text-4xl md:text-5xl font-bold font-playfair mb-4">
+            Our Blog
+          </h1>
+          <p className="text-white/70 max-w-2xl mx-auto text-lg">
+            News, trends, and insights from the world of global agricultural trade.
+          </p>
+        </section>
 
-      {/* Posts Grid */}
-      <section className="py-20 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {POSTS.map((post) => (
-            <Link
-              to={`/blog/${post.slug}`}
-              key={post.slug}
-              className="group bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow flex flex-col"
-            >
-              <img
-                src={post.image}
-                alt={post.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6 flex flex-col flex-1">
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="text-xs font-semibold text-primary uppercase tracking-wider bg-primary/10 px-2 py-1 rounded-full">
-                    {post.category}
-                  </span>
-                  <span className="flex items-center gap-1 text-xs text-foreground/50">
-                    <Calendar className="w-3 h-3" />
-                    {post.date}
+        {/* Posts Grid */}
+        <section className="py-20 px-4 bg-gray-50">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {POSTS.map((post) => (
+              <Link
+                to={`/blog/${post.slug}`}
+                key={post.slug}
+                className="group bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow flex flex-col"
+              >
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="text-xs font-semibold text-primary uppercase tracking-wider bg-primary/10 px-2 py-1 rounded-full">
+                      {post.category}
+                    </span>
+                    <span className="flex items-center gap-1 text-xs text-foreground/50">
+                      <Calendar className="w-3 h-3" />
+                      {post.date}
+                    </span>
+                  </div>
+                  <h2 className="text-lg font-bold text-secondary mb-3 leading-snug">
+                    {post.title}
+                  </h2>
+                  <p className="text-sm text-foreground/60 leading-relaxed mb-6 flex-1">
+                    {post.excerpt}
+                  </p>
+                  <span className="inline-flex items-center justify-center gap-2 text-primary font-semibold text-sm border border-primary/20 rounded-lg px-4 py-2 group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-colors">
+                    Read More <ArrowRight className="w-4 h-4" />
                   </span>
                 </div>
-                <h2 className="text-lg font-bold text-secondary mb-3 leading-snug">
-                  {post.title}
-                </h2>
-                <p className="text-sm text-foreground/60 leading-relaxed mb-6 flex-1">
-                  {post.excerpt}
-                </p>
-                <span className="inline-flex items-center justify-center gap-2 text-primary font-semibold text-sm border border-primary/20 rounded-lg px-4 py-2 group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-colors">
-                  Read More <ArrowRight className="w-4 h-4" />
-                </span>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
+              </Link>
+            ))}
+          </div>
+        </section>
 
-      {/* CTA */}
-      <section className="bg-primary py-16 px-4 text-center">
-        <h2 className="text-3xl font-bold text-white font-playfair mb-4">
-          Have a Question?
-        </h2>
-        <p className="text-white/70 mb-8 max-w-xl mx-auto">
-          Reach out to our team for product details, pricing, or partnership inquiries.
-        </p>
-        <Link
-          to="/contact"
-          className="inline-block px-8 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-all"
-        >
-          Contact Us
-        </Link>
-      </section>
+        {/* CTA */}
+        <section className="bg-primary py-16 px-4 text-center">
+          <h2 className="text-3xl font-bold text-white font-playfair mb-4">
+            Have a Question?
+          </h2>
+          <p className="text-white/70 mb-8 max-w-xl mx-auto">
+            Reach out to our team for product details, pricing, or partnership inquiries.
+          </p>
+          <Link
+            to="/contact"
+            className="inline-block px-8 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-all"
+          >
+            Contact Us
+          </Link>
+        </section>
 
-    </main>
-    <Footer />
+      </main>
+      <Footer />
     </>
   );
 }
