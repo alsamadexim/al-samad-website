@@ -9,20 +9,20 @@ import BenefitCard from '@/components/BenefitCard.jsx';
 
 const HERO_SLIDES = [
   {
-    image: 'https://images.unsplash.com/photo-1584869032754-58d2d1d28aa1?w=1600&q=80',
-    word: 'EXPORTER',
+    image: 'https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1600&q=80',
+    word: 'SHIPMENT',
   },
   {
-    image: 'https://images.unsplash.com/photo-1494412651409-8963ce7935a7?w=1600&q=80',
-    word: 'SUPPLIER',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80',
+    word: 'REQUIREMENT',
   },
   {
-    image: 'https://images.unsplash.com/photo-1526628953301-3cd9e69de9d3?w=1600&q=80',
-    word: 'PARTNER',
+    image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1600&q=80',
+    word: 'MARKET',
   },
   {
-    image: 'https://images.unsplash.com/photo-1609782552332-6c88b895a8f0?w=1600&q=80',
-    word: 'TRADER',
+    image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1600&q=80',
+    word: 'DELIVERY',
   },
 ];
 
@@ -37,12 +37,12 @@ export default function HomePage() {
   }, []);
 
   const featuredProducts = [
-    { name: "Fresh Mangoes", image: "https://images.unsplash.com/photo-1580884199526-6292843d7105", category: "Fruits" },
-    { name: "Premium Grapes", image: "https://images.unsplash.com/photo-1596363505729-4190a9506133", category: "Fruits" },
-    { name: "Red Onions", image: "https://images.unsplash.com/photo-1588613000160-990883456f7c", category: "Vegetables" },
-    { name: "Raw Turmeric", image: "https://images.unsplash.com/photo-1698556735172-1b5b3cd9d2ce", category: "Spices" },
-    { name: "Frozen Foods", image: "https://images.unsplash.com/photo-1606787366850-de6330128bfc", category: "Ready-to-Cook" },
-    { name: "Packaged Snacks", image: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60", category: "Ready-to-Eat" },
+    { name: "Fresh Mangoes", image: "https://images.unsplash.com/photo-1580884199526-6292843d7105?auto=format&fit=crop&w=800&q=80", category: "Fruits" },
+    { name: "Premium Grapes", image: "https://images.unsplash.com/photo-1596363505729-4190a9506133?auto=format&fit=crop&w=800&q=80", category: "Fruits" },
+    { name: "Red Onions", image: "https://images.unsplash.com/photo-1588613000160-990883456f7c?auto=format&fit=crop&w=800&q=80", category: "Vegetables" },
+    { name: "Raw Turmeric", image: "https://images.unsplash.com/photo-1698556735172-1b5b3cd9d2ce?auto=format&fit=crop&w=800&q=80", category: "Spices" },
+    { name: "Frozen Foods", image: "https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=800&q=80", category: "Ready-to-Cook" },
+    { name: "Packaged Snacks", image: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?auto=format&fit=crop&w=800&q=80", category: "Ready-to-Eat" },
   ];
 
   const benefits = [
@@ -73,66 +73,67 @@ export default function HomePage() {
 
           {/* Background image slideshow */}
           {HERO_SLIDES.map((slide, idx) => (
-            <AnimatePresence key={idx}>
-              {current === idx && (
-                <motion.div
-                  key={idx}
-                  className="absolute inset-0"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 1.2 }}
-                >
-                  <img
-                    src={slide.image}
-                    alt=""
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-secondary/70" />
-                </motion.div>
-              )}
-            </AnimatePresence>
+            current === idx && (
+              <motion.div
+                key={idx}
+                className="absolute inset-0"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1.2 }}
+              >
+                <img
+                  src={slide.image}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-secondary/75" />
+              </motion.div>
+            )
           ))}
 
           {/* Hero content */}
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 text-center">
+
+            {/* Welcome line */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-accent font-semibold tracking-widest uppercase text-sm mb-6"
+              className="text-accent font-semibold tracking-widest uppercase text-sm mb-4"
             >
-              Exporter • Bulk Supplier • Global Trade Partner
+              Welcome to AL-SAMAD GLOBAL TRADER
             </motion.p>
 
+            {/* Main heading */}
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight"
+              className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-3 leading-tight"
             >
-              CONNECTING INDIA TO THE WORLD
+              LEADING EXPORT PARTNER
             </motion.h1>
 
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight"
+              className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-3 leading-tight"
             >
-              FOR EVERY -
+              ACROSS THE GLOBE FOR EVERY -
             </motion.h1>
 
             {/* Rotating word */}
-            <div className="h-20 flex items-center justify-center mb-8">
+            <div className="h-24 flex items-center justify-center mb-6">
               <AnimatePresence mode="wait">
                 <motion.h1
                   key={current}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0, y: 40 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -30 }}
+                  exit={{ opacity: 0, y: -40 }}
                   transition={{ duration: 0.5 }}
-                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-accent"
+                  className="text-4xl md:text-6xl lg:text-7xl font-bold text-accent"
                 >
                   {HERO_SLIDES[current].word}
                 </motion.h1>
@@ -176,8 +177,8 @@ export default function HomePage() {
                 <button
                   key={idx}
                   onClick={() => setCurrent(idx)}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    current === idx ? 'bg-accent w-6' : 'bg-white/40'
+                  className={`h-2 rounded-full transition-all ${
+                    current === idx ? 'bg-accent w-8' : 'bg-white/40 w-2'
                   }`}
                 />
               ))}
@@ -226,7 +227,7 @@ export default function HomePage() {
               >
                 <div className="absolute inset-0 bg-primary/5 rounded-3xl transform translate-x-4 translate-y-4" />
                 <img
-                  src="https://images.unsplash.com/photo-1542838132-92c53300491e"
+                  src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80"
                   alt="Quality Fresh Produce"
                   className="rounded-3xl shadow-xl relative z-10 w-full h-[500px] object-cover"
                 />
