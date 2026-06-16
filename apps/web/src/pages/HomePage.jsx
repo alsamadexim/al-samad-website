@@ -7,6 +7,14 @@ import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import BenefitCard from '@/components/BenefitCard.jsx';
 
+import mangoImg from '@/assets/products/mango.png';
+import grapesImg from '@/assets/products/grapes.png';
+import onionImg from '@/assets/products/onions.png';
+import moringaImg from '@/assets/products/moringa.png';
+import frozenImg from '@/assets/products/frozen.png';
+import curryImg from '@/assets/products/meals.png';
+import produceImg from '@/assets/products/pomegranate.png';
+
 const HERO_SLIDES = [
   {
     image: 'https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=1600',
@@ -37,12 +45,12 @@ export default function HomePage() {
   }, []);
 
   const featuredProducts = [
-    { name: "Fresh Mangoes", image: "https://images.unsplash.com/photo-1580884199526-6292843d7105?auto=format&fit=crop&w=800&q=80", category: "Fruits" },
-    { name: "Premium Grapes", image: "https://images.unsplash.com/photo-1596363505729-4190a9506133?auto=format&fit=crop&w=800&q=80", category: "Fruits" },
-    { name: "Red Onions", image: "https://images.unsplash.com/photo-1588613000160-990883456f7c?auto=format&fit=crop&w=800&q=80", category: "Vegetables" },
-    { name: "Raw Turmeric", image: "https://images.unsplash.com/photo-1698556735172-1b5b3cd9d2ce?auto=format&fit=crop&w=800&q=80", category: "Spices" },
-    { name: "Frozen Foods", image: "https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=800&q=80", category: "Ready-to-Cook" },
-    { name: "Packaged Snacks", image: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?auto=format&fit=crop&w=800&q=80", category: "Ready-to-Eat" },
+    { name: "Fresh Mangoes", image: mangoImg, category: "Fruits" },
+    { name: "Premium Grapes", image: grapesImg, category: "Fruits" },
+    { name: "Red Onions", image: onionImg, category: "Vegetables" },
+    { name: "Moringa Powder", image: moringaImg, category: "Health & Wellness" },
+    { name: "Frozen Foods", image: frozenImg, category: "Ready-to-Cook" },
+    { name: "Retort Pouched Meals", image: curryImg, category: "Ready-to-Eat" },
   ];
 
   const benefits = [
@@ -70,8 +78,6 @@ export default function HomePage() {
 
         {/* HERO SECTION */}
         <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-
-          {/* Background image slideshow */}
           {HERO_SLIDES.map((slide, idx) => (
             current === idx && (
               <motion.div
@@ -82,20 +88,13 @@ export default function HomePage() {
                 exit={{ opacity: 0 }}
                 transition={{ duration: 1.2 }}
               >
-                <img
-                  src={slide.image}
-                  alt=""
-                  className="w-full h-full object-cover"
-                />
+                <img src={slide.image} alt="" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-secondary/75" />
               </motion.div>
             )
           ))}
 
-          {/* Hero content */}
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 text-center">
-
-            {/* Welcome line */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -105,7 +104,6 @@ export default function HomePage() {
               Welcome to AL-SAMAD GLOBAL TRADER
             </motion.p>
 
-            {/* Main heading */}
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -124,7 +122,6 @@ export default function HomePage() {
               ACROSS THE GLOBE FOR EVERY -
             </motion.h1>
 
-            {/* Rotating word */}
             <div className="h-24 flex items-center justify-center mb-6">
               <AnimatePresence mode="wait">
                 <motion.h1
@@ -171,7 +168,6 @@ export default function HomePage() {
               </Link>
             </motion.div>
 
-            {/* Slide dots */}
             <div className="flex justify-center gap-2 mt-12">
               {HERO_SLIDES.map((_, idx) => (
                 <button
@@ -227,7 +223,7 @@ export default function HomePage() {
               >
                 <div className="absolute inset-0 bg-primary/5 rounded-3xl transform translate-x-4 translate-y-4" />
                 <img
-                  src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80"
+                  src={produceImg}
                   alt="Quality Fresh Produce"
                   className="rounded-3xl shadow-xl relative z-10 w-full h-[500px] object-cover"
                 />
