@@ -1,13 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ShieldCheck, Truck, Globe, BadgeDollarSign, Users, Award, PackageCheck, Headphones } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import BenefitCard from '@/components/BenefitCard.jsx';
 
+const HERO_SLIDES = [
+  {
+    image: 'https://images.unsplash.com/photo-1584869032754-58d2d1d28aa1?w=1600&q=80',
+    word: 'EXPORTER',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1494412651409-8963ce7935a7?w=1600&q=80',
+    word: 'SUPPLIER',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1526628953301-3cd9e69de9d3?w=1600&q=80',
+    word: 'PARTNER',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1609782552332-6c88b895a8f0?w=1600&q=80',
+    word: 'TRADER',
+  },
+];
+
 export default function HomePage() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % HERO_SLIDES.length);
+    }, 3500);
+    return () => clearInterval(timer);
+  }, []);
+
   const featuredProducts = [
     { name: "Fresh Mangoes", image: "https://images.unsplash.com/photo-1580884199526-6292843d7105", category: "Fruits" },
     { name: "Premium Grapes", image: "https://images.unsplash.com/photo-1596363505729-4190a9506133", category: "Fruits" },
@@ -39,56 +67,120 @@ export default function HomePage() {
       <Header />
 
       <main className="flex-grow pt-20">
-        {/* HERO SECTION */}
-        <section className="relative min-h-[90vh] flex items-center">
-          <div className="absolute inset-0">
-            <img 
-              src="https://images.unsplash.com/photo-1584869032754-58d2d1d28aa1" 
-              alt="Cargo Ship in Port" 
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 via-secondary/80 to-transparent mix-blend-multiply" />
-            <div className="absolute inset-0 bg-secondary/60" />
-          </div>
 
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
-            <div className="max-w-3xl">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
+        {/* HERO SECTION */}
+        <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+
+          {/* Background image slideshow */}
+          {HERO_SLIDES.map((slide, idx) => (
+            <AnimatePresence key={idx}>
+              {current === idx && (
+                <motion.div
+                  key={idx}
+                  className="absolute inset-0"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 1.2 }}
+                >
+                  <img
+                    src={slide.image}
+                    alt=""
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-secondary/70" />
+                </motion.div>
+              )}
+            </AnimatePresence>
+          ))}
+
+          {/* Hero content */}
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 text-center">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-accent font-semibold tracking-widest uppercase text-sm mb-6"
+            >
+              Exporter • Bulk Supplier • Global Trade Partner
+            </motion.p>
+
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight"
+            >
+              CONNECTING INDIA TO THE WORLD
+            </motion.h1>
+
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight"
+            >
+              FOR EVERY -
+            </motion.h1>
+
+            {/* Rotating word */}
+            <div className="h-20 flex items-center justify-center mb-8">
+              <AnimatePresence mode="wait">
+                <motion.h1
+                  key={current}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -30 }}
+                  transition={{ duration: 0.5 }}
+                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-accent"
+                >
+                  {HERO_SLIDES[current].word}
+                </motion.h1>
+              </AnimatePresence>
+            </div>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="text-lg text-white/80 max-w-2xl mx-auto mb-10"
+            >
+              Connecting Indian products with global markets through reliable sourcing,
+              rigorous quality assurance, and timely international delivery.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="flex flex-wrap gap-4 justify-center"
+            >
+              <Link
+                to="/contact"
+                className="px-8 py-4 bg-accent text-secondary font-bold rounded-lg hover:bg-yellow-400 transition-colors shadow-lg active:scale-95 flex items-center"
               >
-                <div className="bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full inline-block mb-6 shadow-sm">
-                  <span className="text-accent font-semibold text-sm uppercase tracking-wider">
-                    Exporter • Bulk Supplier • Global Trade Partner
-                  </span>
-                </div>
-                
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-                  AL-SAMAD <br/>
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-yellow-200">GLOBAL TRADER</span>
-                </h1>
-                
-                <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed max-w-2xl">
-                  Connecting Indian products with global markets through reliable sourcing, rigorous quality assurance, and timely international delivery.
-                </p>
-                
-                <div className="flex flex-wrap gap-4">
-                  <Link 
-                    to="/contact" 
-                    className="px-8 py-4 bg-accent text-secondary font-bold rounded-lg hover:bg-yellow-400 transition-colors shadow-lg active:scale-95 flex items-center"
-                  >
-                    Request Quote
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                  </Link>
-                  <Link 
-                    to="/products" 
-                    className="px-8 py-4 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 backdrop-blur-sm border border-white/30 transition-colors active:scale-95"
-                  >
-                    Browse Products
-                  </Link>
-                </div>
-              </motion.div>
+                Request Quote
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
+              <Link
+                to="/products"
+                className="px-8 py-4 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 backdrop-blur-sm border border-white/30 transition-colors active:scale-95"
+              >
+                Browse Products
+              </Link>
+            </motion.div>
+
+            {/* Slide dots */}
+            <div className="flex justify-center gap-2 mt-12">
+              {HERO_SLIDES.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setCurrent(idx)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    current === idx ? 'bg-accent w-6' : 'bg-white/40'
+                  }`}
+                />
+              ))}
             </div>
           </div>
         </section>
@@ -97,7 +189,7 @@ export default function HomePage() {
         <section className="py-24 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -109,7 +201,7 @@ export default function HomePage() {
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                   Our commitment to quality excellence, transparent practices, and seamless logistics ensures that your bulk orders arrive fresh and on schedule, no matter where your business is located.
                 </p>
-                
+
                 <div className="grid grid-cols-2 gap-6 mb-8">
                   <div className="border-l-4 border-accent pl-4">
                     <p className="text-3xl font-bold text-primary mb-1">20+</p>
@@ -120,22 +212,22 @@ export default function HomePage() {
                     <p className="text-sm font-medium text-foreground">Quality Assured</p>
                   </div>
                 </div>
-                
+
                 <Link to="/about" className="text-primary font-semibold hover:text-accent transition-colors inline-flex items-center">
                   Discover Our Story <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </motion.div>
-              
-              <motion.div 
+
+              <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 className="relative"
               >
                 <div className="absolute inset-0 bg-primary/5 rounded-3xl transform translate-x-4 translate-y-4" />
-                <img 
-                  src="https://images.unsplash.com/photo-1542838132-92c53300491e" 
-                  alt="Quality Fresh Produce" 
+                <img
+                  src="https://images.unsplash.com/photo-1542838132-92c53300491e"
+                  alt="Quality Fresh Produce"
                   className="rounded-3xl shadow-xl relative z-10 w-full h-[500px] object-cover"
                 />
               </motion.div>
@@ -162,9 +254,9 @@ export default function HomePage() {
                   className="group rounded-2xl overflow-hidden shadow-soft bg-card"
                 >
                   <div className="relative h-64 overflow-hidden">
-                    <img 
-                      src={product.image} 
-                      alt={product.name} 
+                    <img
+                      src={product.image}
+                      alt={product.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute top-4 left-4">
@@ -175,7 +267,7 @@ export default function HomePage() {
                   </div>
                   <div className="p-6 flex items-center justify-between border-t border-border/50">
                     <h3 className="text-xl font-bold text-foreground">{product.name}</h3>
-                    <Link 
+                    <Link
                       to={`/contact?product=${encodeURIComponent(product.name)}`}
                       className="text-accent hover:text-primary transition-colors p-2 rounded-full hover:bg-accent/10"
                       aria-label={`Inquire about ${product.name}`}
@@ -186,9 +278,9 @@ export default function HomePage() {
                 </motion.div>
               ))}
             </div>
-            
+
             <div className="text-center mt-12">
-              <Link 
+              <Link
                 to="/products"
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all active:scale-95"
               >
@@ -208,7 +300,7 @@ export default function HomePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {benefits.map((benefit, idx) => (
-                <BenefitCard 
+                <BenefitCard
                   key={idx}
                   icon={benefit.icon}
                   title={benefit.title}
@@ -219,6 +311,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
       </main>
 
       <Footer />
