@@ -12,7 +12,7 @@ export const POSTS = [
     title: 'Why Indian Spices Are in High Demand Across the Middle East',
     excerpt: 'Exploring the growing export trends of Indian spices and what makes them a preferred choice for Gulf importers.',
     date: 'June 1, 2026',
-    image: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=1200&q=80',
+    image: 'https://images.pexels.com/photos/2802527/pexels-photo-2802527.jpeg?auto=compress&cs=tinysrgb&w=800',
     content: `Indian spices have long been prized for their quality, aroma, and authenticity, and demand across Gulf countries continues to climb year after year. From turmeric and cumin to cardamom and chili powder, importers in the UAE, Saudi Arabia, and Qatar consistently turn to Indian suppliers for consistency in flavor and supply.
 
 One major driver is the growing food service and retail sector across the Middle East, where authentic Indian and South Asian cuisine has become mainstream. Restaurants, hotels, and packaged food manufacturers all require a steady, high-quality supply chain — something Indian exporters are well positioned to provide thanks to established farming networks and processing infrastructure.
@@ -28,7 +28,7 @@ Looking ahead, we expect demand to keep growing as more Gulf-based businesses se
     title: 'Quality Standards Every Bulk Exporter Must Follow',
     excerpt: 'A look at the certifications and quality checks that ensure our products meet international standards.',
     date: 'May 20, 2026',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80',
+    image: 'https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=800',
     content: `For any exporter dealing in bulk agricultural products, quality assurance isn't optional — it's the foundation of every successful trade relationship. International buyers expect documentation, certifications, and consistency that match their local regulatory requirements.
 
 Some of the key certifications buyers commonly look for include FSSAI registration, phytosanitary certificates for plant-based products, and in many cases, ISO or HACCP certification depending on the destination country. These documents aren't just paperwork — they represent a verified process of handling, storage, and packaging that protects product integrity from farm to port.
@@ -44,7 +44,7 @@ As global food safety standards continue to tighten, exporters who invest early 
     title: 'Navigating Logistics: Shipping Agricultural Products Overseas',
     excerpt: 'How we manage cold chains, packaging, and documentation for smooth international delivery.',
     date: 'May 5, 2026',
-    image: 'https://images.unsplash.com/photo-1494412651409-8963ce7935a7?w=1200&q=80',
+    image: 'https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=800',
     content: `Shipping agricultural products internationally involves far more than just loading containers onto a vessel. Every step — from packaging to documentation to port handling — affects whether a shipment arrives in the same condition it left in.
 
 Packaging is the first line of defense. Depending on the product, we use moisture-resistant liners, vacuum-sealed packaging, or jute and PP bags suited to the specific commodity and shipping duration. For temperature-sensitive goods, reefer containers maintain consistent conditions throughout transit, preventing spoilage even on long-haul routes.
@@ -52,6 +52,56 @@ Packaging is the first line of defense. Depending on the product, we use moistur
 Documentation is equally critical. A complete export package typically includes a commercial invoice, packing list, certificate of origin, phytosanitary certificate, and bill of lading. Missing or incorrect documents are one of the most common reasons shipments get delayed at customs, so we double-check every document before dispatch.
 
 Finally, working with reliable freight forwarders and shipping lines ensures predictable transit times. We coordinate closely with our logistics partners to track shipments in real time and proactively communicate any delays to our buyers — because in international trade, transparency is just as important as the product itself.`,
+  },
+  {
+    slug: 'fresh-fruits-export-india',
+    category: 'Fruits',
+    readTime: '5 min read',
+    title: 'India's Fresh Fruit Export Boom: Opportunities for Global Buyers',
+    excerpt: 'How Indian fruit exporters are meeting rising global demand with better packaging and cold chain solutions.',
+    date: 'April 18, 2026',
+    image: 'https://images.pexels.com/photos/918643/pexels-photo-918643.jpeg?auto=compress&cs=tinysrgb&w=800',
+    content: `India is one of the world's largest producers of tropical fruits, and its export sector has been growing steadily as infrastructure and packaging technology improve. Mangoes, pomegranates, bananas, and grapes are among the most exported varieties, with buyers in the Middle East, Europe, and Southeast Asia leading demand.
+
+What has changed significantly in recent years is the investment in post-harvest handling. Cold storage facilities near major farming regions, better packaging materials, and more reliable reefer container services have dramatically reduced spoilage during transit. This means buyers now receive fresher product with longer shelf life than was possible even five years ago.
+
+For bulk buyers, India offers a unique advantage: the diversity of growing regions means there is almost always a season in progress somewhere in the country. This allows for a more consistent year-round supply compared to single-region exporters.
+
+At AL-SAMAD GLOBAL TRADER, we source directly from verified farms across Andhra Pradesh, Maharashtra, and Karnataka, ensuring full traceability from orchard to shipment. Our pre-shipment quality reports are shared with buyers before every dispatch, giving full visibility into what is being shipped.`,
+  },
+  {
+    slug: 'moringa-global-superfood',
+    category: 'Health & Wellness',
+    readTime: '4 min read',
+    title: 'Moringa: India's Superfood Taking Global Markets by Storm',
+    excerpt: 'Why moringa powder and pods from India are becoming one of the most sought-after health exports worldwide.',
+    date: 'April 2, 2026',
+    image: 'https://images.pexels.com/photos/4198019/pexels-photo-4198019.jpeg?auto=compress&cs=tinysrgb&w=800',
+    content: `Moringa oleifera — commonly known as the drumstick tree — has been a staple of Indian cooking and traditional medicine for centuries. But over the last decade, it has found a massive global audience as consumers across Europe, North America, and the Middle East seek out natural superfoods with proven health benefits.
+
+The leaves, when dried and powdered, are packed with iron, calcium, vitamin C, and protein — making moringa powder a popular addition to smoothies, health supplements, and functional foods. Fresh drumstick pods remain a key ingredient in South Asian cooking and are exported to diaspora communities around the world.
+
+India accounts for a significant share of global moringa production, with Andhra Pradesh being a particularly strong growing region. Exporters here benefit from year-round availability, low production costs, and growing infrastructure for organic certification — a key requirement for buyers in premium health food markets.
+
+We export both fresh moringa pods and dried moringa powder in certified organic grades, with full documentation for EU and US market entry. As consumer awareness of moringa continues to grow, we see long-term demand expansion across all our active markets.`,
+  },
+  {
+    slug: 'building-long-term-trade-partnerships',
+    category: 'Trade Insights',
+    readTime: '5 min read',
+    title: 'How to Build Long-Term Trade Partnerships as an Importer',
+    excerpt: 'Key factors that distinguish reliable exporters from one-time suppliers — and how to evaluate them before signing a contract.',
+    date: 'March 15, 2026',
+    image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
+    content: `For importers sourcing agricultural products internationally, the difference between a good supplier and a great one often comes down to consistency, communication, and reliability — not just price. Yet many buyers focus primarily on cost when evaluating new exporters, only to face problems down the line.
+
+The first indicator of a trustworthy exporter is transparency. Can they provide farm-level information about where products are sourced? Do they share quality reports proactively, or only when asked? Exporters who are open about their processes are typically more reliable across the board.
+
+Second, look at their documentation track record. Exporters who regularly ship to multiple countries and manage complex customs documentation for different markets are far less likely to make errors that cause delays. Ask for references from existing buyers in your region.
+
+Third, assess their communication during the inquiry stage. Response time, clarity of answers, and willingness to customize packaging or documentation to your requirements are all early signals of how a partnership will function once orders are placed.
+
+At AL-SAMAD GLOBAL TRADER, we believe every buyer relationship should be built on these principles. We offer sample shipments, full pre-shipment documentation review, and dedicated account support to ensure our partners feel confident from the first order onwards.`,
   },
 ];
 
@@ -89,9 +139,14 @@ export default function BlogPage() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6 flex flex-col flex-1">
-                <div className="flex items-center gap-2 text-xs text-foreground/50 mb-3">
-                  <Calendar className="w-4 h-4" />
-                  {post.date}
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-xs font-semibold text-primary uppercase tracking-wider bg-primary/10 px-2 py-1 rounded-full">
+                    {post.category}
+                  </span>
+                  <span className="flex items-center gap-1 text-xs text-foreground/50">
+                    <Calendar className="w-3 h-3" />
+                    {post.date}
+                  </span>
                 </div>
                 <h2 className="text-lg font-bold text-secondary mb-3 leading-snug">
                   {post.title}
