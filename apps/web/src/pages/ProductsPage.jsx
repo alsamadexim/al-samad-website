@@ -12,25 +12,25 @@ const PRODUCT_CATEGORIES = [
     products: [
       {
         name: "Premium Alphonso Mango",
-        image: "https://images.unsplash.com/photo-1580884199526-6292843d7105",
+        image: "https://images.pexels.com/photos/918643/pexels-photo-918643.jpeg?auto=compress&cs=tinysrgb&w=800",
         description: "World-renowned sweet, rich, and flavorful mangoes sourced from elite orchards.",
         features: ["Global GAP Certified", "Air-shipped fresh", "Custom packaging"]
       },
       {
         name: "Export Quality Grapes",
-        image: "https://images.unsplash.com/photo-1596363505729-4190a9506133",
+        image: "https://images.pexels.com/photos/1423006/pexels-photo-1423006.jpeg?auto=compress&cs=tinysrgb&w=800",
         description: "Crisp, sweet, and seedless varieties perfectly suited for international retail.",
         features: ["Thompson Seedless", "Pesticide-free residue", "Cold chain maintained"]
       },
       {
         name: "Cavendish Bananas",
-        image: "https://images.unsplash.com/photo-1603833665858-e61d17a86224",
+        image: "https://images.pexels.com/photos/1166648/pexels-photo-1166648.jpeg?auto=compress&cs=tinysrgb&w=800",
         description: "Premium green Cavendish bananas harvested at optimal maturity.",
         features: ["Standardized finger length", "Vacuum packed", "Extended shelf life"]
       },
       {
         name: "Bhagwa Pomegranate",
-        image: "https://images.unsplash.com/photo-1615486171448-6d2c4769018e",
+        image: "https://images.pexels.com/photos/2342400/pexels-photo-2342400.jpeg?auto=compress&cs=tinysrgb&w=800",
         description: "Deep red arils with high juice content and robust outer skin for transit.",
         features: ["Rich in antioxidants", "Size graded", "Corrugated boxes"]
       }
@@ -42,25 +42,25 @@ const PRODUCT_CATEGORIES = [
     products: [
       {
         name: "Red & White Onions",
-        image: "https://images.unsplash.com/photo-1588613000160-990883456f7c",
+        image: "https://images.pexels.com/photos/533360/pexels-photo-533360.jpeg?auto=compress&cs=tinysrgb&w=800",
         description: "Pungent and flavorful onions with excellent curing for long shelf life.",
         features: ["Mesh bag packing", "Multiple size grades", "Low moisture content"]
       },
       {
         name: "Fresh Potatoes",
-        image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655",
+        image: "https://images.pexels.com/photos/144248/potatoes-vegetables-erdfrucht-bio-144248.jpeg?auto=compress&cs=tinysrgb&w=800",
         description: "Clean, disease-free potatoes suitable for both table consumption and processing.",
         features: ["Cold storage preserved", "Jute/mesh packaging", "High starch content"]
       },
       {
         name: "Green Chilli",
-        image: "https://images.unsplash.com/photo-1588600878108-578307a3cc9d",
+        image: "https://images.pexels.com/photos/1374651/pexels-photo-1374651.jpeg?auto=compress&cs=tinysrgb&w=800",
         description: "Spicy and crisp green chillies essential for global cuisines.",
         features: ["Hand-picked", "Air-freight shipping", "Vibrant color"]
       },
       {
         name: "Fresh Drumstick",
-        image: "https://images.unsplash.com/photo-1601648764658-cf37e8c89b70",
+        image: "https://images.pexels.com/photos/4198019/pexels-photo-4198019.jpeg?auto=compress&cs=tinysrgb&w=800",
         description: "Tender and highly nutritious moringa pods (drumsticks).",
         features: ["Uniform length", "Rich in iron", "Carefully packed"]
       }
@@ -72,19 +72,19 @@ const PRODUCT_CATEGORIES = [
     products: [
       {
         name: "Salem Turmeric Fingers",
-        image: "https://images.unsplash.com/photo-1698556735172-1b5b3cd9d2ce",
+        image: "https://images.pexels.com/photos/4198937/pexels-photo-4198937.jpeg?auto=compress&cs=tinysrgb&w=800",
         description: "High-curcumin content turmeric available in whole finger or grounded form.",
         features: ["Curcumin 3-5%", "ASTA certified", "Bulk PP bags"]
       },
       {
         name: "Guntur Red Chilli",
-        image: "https://images.unsplash.com/photo-1596662951482-0c4ba74a6df6",
+        image: "https://images.pexels.com/photos/1005947/pexels-photo-1005947.jpeg?auto=compress&cs=tinysrgb&w=800",
         description: "Famous Indian red chillies known for intense heat and rich color.",
         features: ["Stemless available", "High capsaicin", "Aflatoxin free"]
       },
       {
         name: "Basmati Rice",
-        image: "https://images.unsplash.com/photo-1586201375761-83865001e31c",
+        image: "https://images.pexels.com/photos/4110251/pexels-photo-4110251.jpeg?auto=compress&cs=tinysrgb&w=800",
         description: "Extra long grain aromatic rice, aged to perfection.",
         features: ["1121 & 1509 Varieties", "Sortex clean", "Custom branding bags"]
       }
@@ -96,13 +96,13 @@ const PRODUCT_CATEGORIES = [
     products: [
       {
         name: "Frozen Vegetables & Snacks",
-        image: "https://images.unsplash.com/photo-1606787366850-de6330128bfc",
+        image: "https://images.pexels.com/photos/3872373/pexels-photo-3872373.jpeg?auto=compress&cs=tinysrgb&w=800",
         description: "IQF (Individually Quick Frozen) veggies and ethnic Indian snacks.",
         features: ["Nutrients locked", "Long expiry", "Reefer container shipping"]
       },
       {
         name: "Retort Pouched Meals",
-        image: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60",
+        image: "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=800",
         description: "Ready-to-eat authentic Indian curries requiring no refrigeration.",
         features: ["Ambient storage", "Zero preservatives", "Private label available"]
       }
