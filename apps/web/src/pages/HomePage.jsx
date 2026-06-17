@@ -10,7 +10,7 @@ import BenefitCard from '@/components/BenefitCard.jsx';
 import fruitImg from '@/assets/home/fruit.png';
 import vegetableImg from '@/assets/home/vegetable.png';
 import spicesImg from '@/assets/home/spices.png';
-import herbsImg from '@/assets/home/herb.png';
+import nutsImg from '@/assets/home/nuts.png';
 import frozenImg from '@/assets/home/frozen.png';
 import curryImg from '@/assets/home/meals.png';
 import produceImg from '@/assets/home/alsamad.png';
@@ -48,7 +48,7 @@ export default function HomePage() {
     { name: "Fresh Fruits", image: fruitImg, category: "Fruits" },
     { name: "Fresh Vegetables", image: vegetableImg, category: "Vegetables" },
     { name: "Whole Spices", image: spicesImg, category: "Spices" },
-    { name: "Herbs & Superfood Powders", image: herbsImg, category: "Health & Wellness" },
+    { name: "Nuts & Dry Fruits", image: nutsImg, category: "Health & Wellness" },
     { name: "Frozen Foods", image: frozenImg, category: "Ready-to-Cook" },
     { name: "Retort Pouched Meals", image: curryImg, category: "Ready-to-Eat" },
   ];
