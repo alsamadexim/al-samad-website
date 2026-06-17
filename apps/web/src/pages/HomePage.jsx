@@ -225,7 +225,7 @@ export default function HomePage() {
                 <img
                   src={produceImg}
                   alt="Quality Fresh Produce"
-                  className="rounded-3xl shadow-xl relative z-10 w-full h-[500px] object-cover"
+                  className="rounded-3xl shadow-xl relative z-10 w-full h-[280px] md:h-[500px] object-cover object-top"
                 />
               </motion.div>
             </div>
