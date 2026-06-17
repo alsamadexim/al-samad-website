@@ -7,13 +7,13 @@ import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import BenefitCard from '@/components/BenefitCard.jsx';
 
-import mangoImg from '@/assets/products/mango.png';
-import grapesImg from '@/assets/products/grapes.png';
-import onionImg from '@/assets/products/onions.png';
-import moringaImg from '@/assets/products/moringa.png';
-import frozenImg from '@/assets/products/frozen.png';
-import curryImg from '@/assets/products/meals.png';
-import produceImg from '@/assets/products/alsamad.png';
+import fruitImg from '@/assets/home/fruit.png';
+import vegetableImg from '@/assets/home/vegetable.png';
+import spicesImg from '@/assets/home/spices.png';
+import herbsImg from '@/assets/home/herb.png';
+import frozenImg from '@/assets/home/frozen.png';
+import curryImg from '@/assets/home/meals.png';
+import produceImg from '@/assets/home/alsamad.png';
 
 const HERO_SLIDES = [
   {
@@ -45,10 +45,10 @@ export default function HomePage() {
   }, []);
 
   const featuredProducts = [
-    { name: "Fresh Mangoes", image: mangoImg, category: "Fruits" },
-    { name: "Premium Grapes", image: grapesImg, category: "Fruits" },
-    { name: "Red Onions", image: onionImg, category: "Vegetables" },
-    { name: "Moringa Powder", image: moringaImg, category: "Health & Wellness" },
+    { name: "Fresh Fruits", image: fruitImg, category: "Fruits" },
+    { name: "Fresh Vegetables", image: vegetableImg, category: "Vegetables" },
+    { name: "Whole Spices", image: spicesImg, category: "Spices" },
+    { name: "Herbs & Superfood Powders", image: herbsImg, category: "Health & Wellness" },
     { name: "Frozen Foods", image: frozenImg, category: "Ready-to-Cook" },
     { name: "Retort Pouched Meals", image: curryImg, category: "Ready-to-Eat" },
   ];
