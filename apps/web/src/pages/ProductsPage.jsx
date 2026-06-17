@@ -70,7 +70,7 @@ const CATEGORIES = [
     emoji: "🫒",
     subtitle: "Pure & Cold-Pressed Indian Oils",
     description: "Our edible oils are extracted using cold-press and expeller methods to retain maximum nutrition and flavor. We supply refined and unrefined varieties in bulk packaging suitable for retail and food manufacturing.",
-    image: oilsImg,
+    image: oilImg,
     items: ["Coconut Oil", "Sesame Oil", "Groundnut Oil", "Mustard Oil", "Sunflower Oil", "Rice Bran Oil", "Virgin Coconut Oil"],
   },
   {
