@@ -13,7 +13,7 @@ import onionImg from '@/assets/products/onions.png';
 import moringaImg from '@/assets/products/moringa.png';
 import frozenImg from '@/assets/products/frozen.png';
 import curryImg from '@/assets/products/meals.png';
-import produceImg from '@/assets/products/vegetables.png';
+import produceImg from '@/assets/products/alsamad.png';
 
 const HERO_SLIDES = [
   {
