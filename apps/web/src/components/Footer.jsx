@@ -26,10 +26,10 @@ export default function Footer() {
               <a href="https://instagram.com/alsamad.exim" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent hover:text-secondary transition-colors" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent hover:text-secondary transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/profile.php?id=100092460834869" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent hover:text-secondary transition-colors" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent hover:text-secondary transition-colors" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/al-samad-global-trader-38a715400" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent hover:text-secondary transition-colors" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
