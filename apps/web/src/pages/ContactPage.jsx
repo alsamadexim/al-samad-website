@@ -57,8 +57,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h4 className="font-bold text-foreground mb-1">Phone / WhatsApp</h4>
-                      <a href="tel:+918688607407" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                        +91 86886 07407
+                      <a href="tel:+919949466313" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                        +91 99494 66313
                       </a>
                     </div>
                   </div>
@@ -96,7 +96,7 @@ export default function ContactPage() {
                   </h4>
                   <p className="text-sm text-muted-foreground mb-4">Need instant answers? Message our sales team directly on WhatsApp.</p>
                   <a 
-                    href="https://wa.me/918688607407" 
+                    href="https://wa.me/919949466313" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-block w-full text-center px-4 py-2.5 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition-colors"
